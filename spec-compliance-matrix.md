@@ -22,7 +22,7 @@ status of the feature is not known.
 |[Tracer](specification/trace/api.md#tracer-operations)|
 |Create a new Span                             | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
 |Get active Span                               | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
-|Mark Span active                              | + | +  | + | +    | +  | +    | + | +  | - | +  | -   |
+|Mark Span active                              | + | +  | + | +    | +  | +    | + | +  | - | +  | +   |
 |Safe for concurrent calls                     | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
 |[SpanContext](specification/trace/api.md#spancontext)|
 |IsValid                                       | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
@@ -39,7 +39,7 @@ status of the feature is not known.
 |End                                           | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
 |End with timestamp                            | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
 |IsRecording                                   | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
-|IsRecording becomes false after End           |   | +  | + | +    |    | +    |   |    |   |    | -   |
+|IsRecording becomes false after End           |   | +  | + | +    |    | +    |   |    |   |    | +   |
 |Set status with StatusCode (Unset, Ok, Error) |   | +  | + | +    | +  | -    |   | +  |   | +  | +   |
 |Safe for concurrent calls                     | + | +  | + | +    | +  | +    | + | +  | + | +  | +   |
 |events collection size limit                  |   | +  | + | +    | +  | -    |   | +  |   | -  | +   |
@@ -69,7 +69,7 @@ status of the feature is not known.
 |Allow samplers to modify tracestate           |   | +  |   | +    |    | +    |   | +  |   |    |  +  |
 |ShouldSample gets full parent Context         |   | +  | + | +    |    | +    |   |    |   |    |  +  |
 |[New Span ID created also for non-recording Spans](specification/trace/sdk.md#sdk-span-creation) |   |    |   | +    |    |      |   |    |   |    | +   |
-|SDK Trace & Span ID generation is customizable| + | +  | + |  +   |    |      |   |    |   | +  |     |
+|SDK Trace & Span ID generation is customizable| + | +  | + |  +   |    |      |   |    |   | +  | +   |
 
 ## Baggage
 
@@ -113,7 +113,7 @@ status of the feature is not known.
 |Fields                                        |  | +  | + | +    |    | +    |   | +  |   |  + | +   |
 |Setter argument                               |  | +  | + | +    |    | +    |   |    |   |  + | +   |
 |Getter argument                               |  | +  | + | +    |    | +    |   |    |   |  + | +   |
-|Getter argument returning Keys                |  | +  | + | +    |    | +    |   |    |   |  - | -   |
+|Getter argument returning Keys                |  | +  | + | +    |    | +    |   |    |   |  - | +   |
 
 ## Environment Variables
 
